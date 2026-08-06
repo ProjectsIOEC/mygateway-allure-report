@@ -1,3 +1,3 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","23924","Successfully create, import, submit, and approve a price list","","2026-08-06","passed","2026-08-06","Price list creation","features\newPriceList.feature.spec.js","",""
-"","8892","Successful login","","2026-08-06","passed","2026-08-06","Login functionality","features\login.feature.spec.js","",""
+"","15276","Successful login","","2026-08-06","passed","2026-08-06","Login functionality","features\login.feature.spec.js","",""
+"","24618","Successfully create, import, submit, and approve a price list","","2026-08-06","passed","2026-08-06","Price list creation","features\newPriceList.feature.spec.js","",""
