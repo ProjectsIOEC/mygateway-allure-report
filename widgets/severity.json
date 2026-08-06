@@ -1,0 +1,1 @@
+[{"uid":"ab1ee460e1eccd1b","name":"Successful login","time":{"start":1786048862387,"stop":1786048871107,"duration":8720},"status":"passed","severity":"normal"},{"uid":"d24059b218b416e2","name":"Successfully create, import, submit, and approve a price list","time":{"start":1786048871345,"stop":1786048896134,"duration":24789},"status":"passed","severity":"normal"}]
