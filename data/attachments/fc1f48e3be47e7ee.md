@@ -18,7 +18,7 @@ Test timeout of 30000ms exceeded.
 ```
 Error: locator.click: Test timeout of 30000ms exceeded.
 Call log:
-  - waiting for locator('iframe').contentFrame().getByRole('button', { name: 'Unilever Exports (ZAR)' })
+  - waiting for locator('iframe').contentFrame().getByRole('option', { name: 'Only For' })
 
 ```
 
@@ -85,7 +85,7 @@ Call log:
                 - generic [ref=f2e16]:
                   - generic [ref=f2e17]:
                     - button "Valid From"
-                    - textbox "Valid From" [ref=f2e18]: 2026-08-26
+                    - textbox "Valid From" [ref=f2e18]: 2026-08-27
                   - generic [ref=f2e20]:
                     - button "Valid To"
                     - textbox "Valid To" [ref=f2e21]
@@ -94,7 +94,7 @@ Call log:
                   - combobox "Supplier" [ref=f2e26]
                 - generic [ref=f2e28]:
                   - generic: Area permissions/restrictions
-                  - listbox "Select Area Permissions/Restrictions" [ref=f2e29]:
+                  - listbox "Select Area Permissions/Restrictions" [ref=f2e29] [cursor=pointer]:
                     - generic:
                       - generic: Select Area Permissions/Restrictions
                       - generic: ▼
@@ -399,15 +399,15 @@ Call log:
   54  | When('the user enters a valid supplier', async ({ page }) => {
   55  |   await page.locator('iframe').contentFrame().getByRole('combobox', { name: 'Supplier' }).click();
   56  |   await page.locator('iframe').contentFrame().getByRole('combobox', { name: 'Supplier' }).fill('Unilever Exports');
-> 57  |   await page.locator('iframe').contentFrame().getByRole('button', { name: 'Unilever Exports (ZAR)' }).click();
-      |                                                                                                       ^ Error: locator.click: Test timeout of 30000ms exceeded.
+  57  |   await page.locator('iframe').contentFrame().getByRole('button', { name: 'Unilever Exports (ZAR)' }).click();
   58  |   await page.locator('iframe').contentFrame().getByRole('combobox', { name: 'Supplier' }).press('Tab');
   59  |   
   60  | });
   61  | 
   62  | When('the user selects area permissions', async ({ page }) => {
   63  |   await page.locator('iframe').contentFrame().getByRole('listbox', { name: 'Select Area Permissions/' }).click();
-  64  |   await page.locator('iframe').contentFrame().getByRole('option', { name: 'Only For' }).click();
+> 64  |   await page.locator('iframe').contentFrame().getByRole('option', { name: 'Only For' }).click();
+      |                                                                                         ^ Error: locator.click: Test timeout of 30000ms exceeded.
   65  |   await page.locator('iframe').contentFrame().locator('md-input-container').filter({ hasText: 'Countries' }).locator('md-select-value').click();
   66  |   await page.locator('iframe').contentFrame().getByRole('textbox', { name: 'Areas' }).click();
   67  |   await page.locator('iframe').contentFrame().getByRole('textbox', { name: 'Areas' }).fill('United States');
@@ -501,4 +501,11 @@ Call log:
   155 | When('the user clicks the Send button', async ({ page }) => {
   156 |   await page.getByRole('button', { name: /^send$/i }).click();
   157 | });
+  158 | 
+  159 | When('the approver navigates to Inventory Price List', async ({ page }) => {
+  160 |   // Optional: sign out and sign in as approver here if needed
+  161 |   await page.goto('/inventory/price-list');
+  162 | });
+  163 | 
+  164 | When('the approver searches for and selects the price list', async ({ page }) => {
 ```
