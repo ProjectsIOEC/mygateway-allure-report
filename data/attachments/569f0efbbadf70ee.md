@@ -85,7 +85,7 @@ Call log:
                 - generic [ref=f2e17]:
                   - generic [ref=f2e18]:
                     - button: Valid From
-                    - textbox [ref=f2e19]: 2026-08-31
+                    - textbox [ref=f2e19]: 2026-09-01
                   - generic [ref=f2e21]:
                     - button: Valid To
                     - textbox [ref=f2e22]
@@ -123,7 +123,7 @@ Call log:
               - button [ref=f2e61]:
                 - button [ref=f2e62] [cursor=pointer]:
                   - generic [ref=f2e63]: Create Price List
-          - status [ref=f2e64]: There are 50 matches available.
+          - status [ref=f2e64]: There is 1 match available.
           - alertdialog "Alert Dialog" [ref=f2e67]:
             - document [ref=f2e68]:
               - heading "Validation Error" [level=2] [ref=f2e69]
