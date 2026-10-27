@@ -1,0 +1,2 @@
+Cart creation completed successfully.
+Successfully created Cart ID: 70921
