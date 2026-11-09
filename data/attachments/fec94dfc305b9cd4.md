@@ -1,0 +1,1092 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: features\createAccount.feature.spec.js >> Create Account >> Customer is on gateway to create a new account
+- Location: .features-gen\features\createAccount.feature.spec.js:6:7
+
+# Error details
+
+```
+TimeoutError: locator.selectOption: Timeout 30000ms exceeded.
+Call log:
+  - waiting for getByRole('combobox')
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - region "We value your privacy" [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e5]:
+        - heading "We value your privacy" [level=2] [ref=e6]
+        - generic [ref=e7]:
+          - paragraph [ref=e9]: We use cookies to enhance your browsing experience and analyse our traffic. By clicking "Accept All", you consent to our use of cookies.
+          - group [ref=e10]:
+            - button "Customise" [ref=e11] [cursor=pointer]
+            - button "Reject All" [ref=e12] [cursor=pointer]
+            - button "Accept All" [ref=e13] [cursor=pointer]
+      - generic [ref=e16]:
+        - text: Powered by
+        - link "Visit CookieYes website" [ref=e17] [cursor=pointer]:
+          - /url: https://www.cookieyes.com/product/cookie-consent/?ref=cypbcyb&utm_source=cookie-banner&utm_medium=fl-branding
+          - img [ref=e18]
+  - generic [ref=e31]:
+    - generic [ref=e32]:
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - img [ref=e38] [cursor=pointer]
+          - link [ref=e40] [cursor=pointer]:
+            - /url: /
+            - img [ref=e41]
+          - button "Hello, sign in or create account" [ref=e42] [cursor=pointer]:
+            - img [ref=e44]
+            - generic [ref=e46]:
+              - generic [ref=e47]: Hello, sign in
+              - generic [ref=e48]: or create account
+        - generic [ref=e49]:
+          - generic [ref=e50]:
+            - generic [ref=e52] [cursor=pointer]:
+              - text: Shop by department
+              - img [ref=e54]
+            - generic [ref=e59] [cursor=pointer]:
+              - img [ref=e62]
+              - textbox "What are you looking for?" [ref=e65]
+            - generic [ref=e77] [cursor=pointer]:
+              - generic [ref=e78]: 0% Full ›
+              - generic [ref=e79]: 20' Dry Loose
+            - generic [ref=e80]:
+              - link [ref=e81] [cursor=pointer]:
+                - /url: /shopping/cart
+                - img [ref=e83]
+              - generic:
+                - generic: "Total: 0.00"
+                - generic: Edit Shipping Options
+                - link "View Cart (0 items)":
+                  - /url: /shopping/cart
+                - link "Checkout":
+                  - /url: /shopping/checkout
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - button "Explore Sourcing Options":
+                          - generic: Explore Sourcing Options
+                          - generic:
+                            - img
+                            - img
+                            - img
+                            - img
+                            - img
+                            - img
+                            - img
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Favourites" [disabled]:
+                              - generic:
+                                - img
+                              - text: Favourites
+                            - button "Deals" [disabled]:
+                              - generic:
+                                - img
+                              - text: Deals
+                            - button "Increases" [disabled]:
+                              - generic:
+                                - img
+                              - text: Increases
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: Alcohol
+                              - generic:
+                                - generic: Wine, Spirits & Beer
+                                - generic: "2511"
+                            - generic:
+                              - generic:
+                                - generic: Building, Commercial & Lifestyle
+                              - generic:
+                                - generic: Automotive
+                                - generic: "58"
+                              - generic:
+                                - generic: Building Materials
+                                - generic: "681"
+                              - generic:
+                                - generic: Commercial & Industrial
+                                - generic: "2173"
+                              - generic:
+                                - generic: Electrical & Lighting
+                                - generic: "120"
+                              - generic:
+                                - generic: Food Service, Hospitality & Food Production
+                                - generic: "680"
+                              - generic:
+                                - generic: Hardware & DIY
+                                - generic: "4743"
+                              - generic:
+                                - generic: Home, Office & Garden
+                                - generic: "2942"
+                              - generic:
+                                - generic: Plumbing & Sanware
+                                - generic: "51"
+                              - generic:
+                                - generic: Poultry & Livestock Supplies
+                                - generic: "167"
+                            - generic:
+                              - generic:
+                                - generic: FMCG
+                              - generic:
+                                - generic: Baby & Child
+                                - generic: "392"
+                              - generic:
+                                - generic: Beauty, Well-being & Personal Care
+                                - generic: "2162"
+                              - generic:
+                                - generic: Beverages
+                                - generic: "2637"
+                              - generic:
+                                - generic: Dry Goods
+                                - generic: "7208"
+                              - generic:
+                                - generic: Household & Cleaning
+                                - generic: "680"
+                              - generic:
+                                - generic: Pet Care
+                                - generic: "1133"
+                              - generic:
+                                - generic: Snacks & Confectionery
+                                - generic: "3104"
+                            - generic:
+                              - generic:
+                                - generic: Perishables
+                              - generic:
+                                - generic: Chilled & Frozen Foods
+                                - generic: "4038"
+                              - generic:
+                                - generic: Fresh Fruit
+                                - generic: "4587"
+                              - generic:
+                                - generic: Fresh Vegetables & Herbs
+                                - generic: "444"
+                              - generic:
+                                - generic: Meat, Fish & Seafood
+                                - generic: "2074"
+                            - generic:
+                              - generic:
+                                - generic: Services
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Brand
+                            - generic:
+                              - generic:
+                                - img
+                        - generic:
+                          - generic:
+                            - generic: Tag
+                            - generic:
+                              - generic:
+                                - img
+                        - generic:
+                          - generic:
+                            - generic: Manufacturer
+                            - generic:
+                              - generic:
+                                - img
+      - generic [ref=e87]:
+        - generic [ref=e91]:
+          - generic [ref=e92]:
+            - link [ref=e93] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e94]
+            - link [ref=e95] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e96]
+            - link [ref=e97] [cursor=pointer]:
+              - /url: "?pf_start_flow=fl_4W2derrQnBMcth0VDsHFaO"
+              - img [ref=e98]
+          - generic:
+            - img [ref=e101] [cursor=pointer]
+            - img [ref=e105] [cursor=pointer]
+        - generic [ref=e108]:
+          - generic [ref=e110]:
+            - generic [ref=e112]:
+              - generic [ref=e113]:
+                - generic [ref=e114]: Customer Favourites in Soup, Stock, Gravy & Sauces
+                - link "See More" [ref=e115] [cursor=pointer]:
+                  - /url: shopping/items?Filters=(InventoryTag:254393:Customer_Favourites_in_Soup_Stock_Gravy_%26_Sauces,ProductClass:GROCAASOUPSA:Soup_Stock_Gravy_%26_Sauces)
+              - generic [ref=e117]:
+                - link "Knorr Sauces - Creamy Mushroom 38g Sign in for price per Carton (2 x 10 x 38g)" [ref=e119] [cursor=pointer]:
+                  - /url: /shopping/items/UNIAKNORSAUC0012
+                  - img "Knorr Sauces - Creamy Mushroom 38g" [ref=e121]
+                  - generic [ref=e123]:
+                    - generic [ref=e124]: Sign in for price
+                    - generic [ref=e125]: per Carton (2 x 10 x 38g)
+                - link "Robertsons Rajah Curry - Mild & Spicy 50g Sign in for price per Carton (4 x 10 x 50g)" [ref=e127] [cursor=pointer]:
+                  - /url: /shopping/items/UNIAROBERAJA0018
+                  - img "Robertsons Rajah Curry - Mild & Spicy 50g" [ref=e129]
+                  - generic [ref=e131]:
+                    - generic [ref=e132]: Sign in for price
+                    - generic [ref=e133]: per Carton (4 x 10 x 50g)
+                - link "Robertsons Rajah Curry - Medium 50g Sign in for price per Carton (4 x 10 x 50g)" [ref=e135] [cursor=pointer]:
+                  - /url: /shopping/items/UNIAROBERAJA0014
+                  - img "Robertsons Rajah Curry - Medium 50g" [ref=e137]
+                  - generic [ref=e139]:
+                    - generic [ref=e140]: Sign in for price
+                    - generic [ref=e141]: per Carton (4 x 10 x 50g)
+                - link "Robertsons Rajah Curry - Medium 200g Sign in for price per Carton (4 x 10 x 200g)" [ref=e143] [cursor=pointer]:
+                  - /url: /shopping/items/UNIAROBERAJA0013
+                  - img "Robertsons Rajah Curry - Medium 200g" [ref=e145]
+                  - generic [ref=e147]:
+                    - generic [ref=e148]: Sign in for price
+                    - generic [ref=e149]: per Carton (4 x 10 x 200g)
+            - generic [ref=e151]:
+              - generic [ref=e152]:
+                - generic [ref=e153]: Crisps Favourites
+                - link "Show More" [ref=e154] [cursor=pointer]:
+                  - /url: shopping/items?Filters=(InventoryTag:254418:Crisps_Favourites,ProductClass:GROCBASNACKACRISPA:Crisps)
+              - generic [ref=e156]:
+                - link "Willards Flings - Original 150g Sign in for price per Carton (16 x 150g)" [ref=e158] [cursor=pointer]:
+                  - /url: /shopping/items/NATAWILLFLIN0005
+                  - img "Willards Flings - Original 150g" [ref=e160]
+                  - generic [ref=e162]:
+                    - generic [ref=e163]: Sign in for price
+                    - generic [ref=e164]: per Carton (16 x 150g)
+                - link "Simba Cheetos - Cheese 90g Sign in for price per Carton (10 x 90g)" [ref=e166] [cursor=pointer]:
+                  - /url: /shopping/items/PEPBSIMBCHEE0014
+                  - img "Simba Cheetos - Cheese 90g" [ref=e168]
+                  - generic [ref=e170]:
+                    - generic [ref=e171]: Sign in for price
+                    - generic [ref=e172]: per Carton (10 x 90g)
+                - link "Lays Potato Chips - Salted 105g Sign in for price per Carton (20 x 105g)" [ref=e174] [cursor=pointer]:
+                  - /url: /shopping/items/PEPBLAYSPOTA0015
+                  - img "Lays Potato Chips - Salted 105g" [ref=e176]
+                  - generic [ref=e178]:
+                    - generic [ref=e179]: Sign in for price
+                    - generic [ref=e180]: per Carton (20 x 105g)
+                - link "Doritos Sweet Chilli Pepper 30g Sign in for price per Carton (30 x 30g)" [ref=e182] [cursor=pointer]:
+                  - /url: /shopping/items/PEPBDORISWEE0007
+                  - img "Doritos Sweet Chilli Pepper 30g" [ref=e184]
+                  - generic [ref=e186]:
+                    - generic [ref=e187]: Sign in for price
+                    - generic [ref=e188]: per Carton (30 x 30g)
+            - generic [ref=e190]:
+              - generic [ref=e191]:
+                - generic [ref=e192]: Customer Favourites in Sweet Biscuits
+                - link "See More" [ref=e193] [cursor=pointer]:
+                  - /url: shopping/items?Filters=(InventoryTag:254402:Customer_Favourites_in_Sweet_Biscuits,ProductClass:GROCAABISCUASWEETA:Sweet_Biscuits)
+              - generic [ref=e195]:
+                - link "Bakers Ginger Nuts 190g Sign in for price per Carton (12 x 190g)" [ref=e197] [cursor=pointer]:
+                  - /url: /shopping/items/NATABAKETEST0001
+                  - img "Bakers Ginger Nuts 190g" [ref=e199]
+                  - generic [ref=e201]:
+                    - generic [ref=e202]: Sign in for price
+                    - generic [ref=e203]: per Carton (12 x 190g)
+                - link "Bakers Iced Zoo 150g Sign in for price per Carton (12 x 150g)" [ref=e205] [cursor=pointer]:
+                  - /url: /shopping/items/NATABAKEICED0002
+                  - img "Bakers Iced Zoo 150g" [ref=e207]
+                  - generic [ref=e209]:
+                    - generic [ref=e210]: Sign in for price
+                    - generic [ref=e211]: per Carton (12 x 150g)
+                - link "Bakers Romany Creams - Vanilla Choc 200g Sign in for price per Carton (12 x 200g)" [ref=e213] [cursor=pointer]:
+                  - /url: /shopping/items/NATABAKEROMA0011
+                  - img "Bakers Romany Creams - Vanilla Choc 200g" [ref=e215]
+                  - generic [ref=e217]:
+                    - generic [ref=e218]: Sign in for price
+                    - generic [ref=e219]: per Carton (12 x 200g)
+                - link "Bakers Topper - Lemon 125g Sign in for price per Carton (12 x 125g)" [ref=e221] [cursor=pointer]:
+                  - /url: /shopping/items/NATABAKETOPP0009
+                  - img "Bakers Topper - Lemon 125g" [ref=e223]
+                  - generic [ref=e225]:
+                    - generic [ref=e226]: Sign in for price
+                    - generic [ref=e227]: per Carton (12 x 125g)
+          - generic [ref=e229]:
+            - generic [ref=e231]:
+              - generic [ref=e232]:
+                - generic [ref=e233]: Customer Favourites in Savoury Biscuits
+                - link "Explore More" [ref=e234] [cursor=pointer]:
+                  - /url: shopping/items?Filters=(InventoryTag:254398:Customer_Favourites_in_Savoury_Biscuits,ProductClass:GROCAABISCUASAVOUA:Savoury_Biscuits)
+              - generic [ref=e236]:
+                - link "Bakers Salticrax - Black Pepper (Local) 200g Sign in for price per Carton (12 x 200g)" [ref=e238] [cursor=pointer]:
+                  - /url: /shopping/items/NATABAKESALT0001
+                  - img "Bakers Salticrax - Black Pepper (Local) 200g" [ref=e240]
+                  - generic [ref=e242]:
+                    - generic [ref=e243]: Sign in for price
+                    - generic [ref=e244]: per Carton (12 x 200g)
+                - link "Bakers Mini Cheddars - Multipack - Bacon 6x33g Sign in for price per Carton (24 x 6 x 33g)" [ref=e246] [cursor=pointer]:
+                  - /url: /shopping/items/NATABAKEMINI0019
+                  - img "Bakers Mini Cheddars - Multipack - Bacon 6x33g" [ref=e248]
+                  - generic [ref=e250]:
+                    - generic [ref=e251]: Sign in for price
+                    - generic [ref=e252]: per Carton (24 x 6 x 33g)
+                - link "Bakers Provita - Crispbread - Multigrain (2x125g) 250g Sign in for price per Carton (12 x 250g)" [ref=e254] [cursor=pointer]:
+                  - /url: /shopping/items/NATABAKEPROV0005
+                  - img "Bakers Provita - Crispbread - Multigrain (2x125g) 250g" [ref=e256]
+                  - generic [ref=e258]:
+                    - generic [ref=e259]: Sign in for price
+                    - generic [ref=e260]: per Carton (12 x 250g)
+                - link "Bakers Provita - Orig.Crispbread-Wholewheat (2x125g)250g Sign in for price per Carton (12 x 250g)" [ref=e262] [cursor=pointer]:
+                  - /url: /shopping/items/NATABAKEPROV0007
+                  - img "Bakers Provita - Orig.Crispbread-Wholewheat (2x125g)250g" [ref=e264]
+                  - generic [ref=e266]:
+                    - generic [ref=e267]: Sign in for price
+                    - generic [ref=e268]: per Carton (12 x 250g)
+            - generic [ref=e270]:
+              - generic [ref=e271]:
+                - generic [ref=e272]: Long-Life Dairy Best Sellers
+                - link "Discover More" [ref=e273] [cursor=pointer]:
+                  - /url: shopping/items?Filters=(InventoryTag:254411:Long-Life_Dairy_Best_Sellers,ProductClass:GROCAALONGLA:Long-Life_Dairy)
+              - link "Danone Ultramel - Strawberry (4x125g) Sign in for price per Carton (6 x 4 x 125g)" [ref=e276] [cursor=pointer]:
+                - /url: /shopping/items/DANADANOULTR0005
+                - img [ref=e278]
+                - generic [ref=e279]:
+                  - generic [ref=e280]: Danone Ultramel - Strawberry (4x125g)
+                  - generic [ref=e281]:
+                    - generic [ref=e282]: Sign in for price
+                    - generic [ref=e283]: per Carton (6 x 4 x 125g)
+            - generic [ref=e285]:
+              - generic [ref=e286]:
+                - generic [ref=e287]: Ceres Best Sellers
+                - link "View More" [ref=e288] [cursor=pointer]:
+                  - /url: shopping/items?Filters=(InventoryTag:14278:Ceres_Best_Sellers,Brand:117:Ceres)
+              - link "Ceres Tetra - 100% Fruit Juice - Medley of Fruits 200ml Sign in for price per Carton (4 x 6 x 200ml)" [ref=e291] [cursor=pointer]:
+                - /url: /shopping/items/PIOACEREMEDL0002
+                - img [ref=e293]
+                - generic [ref=e294]:
+                  - generic [ref=e295]: Ceres Tetra - 100% Fruit Juice - Medley of Fruits 200ml
+                  - generic [ref=e296]:
+                    - generic [ref=e297]: Sign in for price
+                    - generic [ref=e298]: per Carton (4 x 6 x 200ml)
+          - generic [ref=e302]:
+            - generic [ref=e303]:
+              - generic [ref=e304]: Learn More
+              - link:
+                - /url: /shopping/items?Filters=(InventoryTag:371691:Learn_More_)
+            - generic [ref=e305]:
+              - link [ref=e307] [cursor=pointer]:
+                - /url: "?pf_start_flow=fl_3IkgpVcluR9mjS5CuvfKey"
+                - img [ref=e309]
+              - link [ref=e312] [cursor=pointer]:
+                - /url: "?pf_start_flow=fl_3IkgpVcluR9mjS5CuvfKey"
+                - img [ref=e314]
+              - link [ref=e317] [cursor=pointer]:
+                - /url: "?pf_start_flow=fl_1OxcYAV6U9u9oysjhc1DEq"
+                - img [ref=e319]
+              - link [ref=e322] [cursor=pointer]:
+                - /url: "?pf_start_flow=fl_1OxcYAV6U9u9oysjhc1DEq"
+                - img [ref=e324]
+              - link [ref=e327] [cursor=pointer]:
+                - /url: "?pf_start_flow=fl_38ePLpgffrsuCrpGG89hco"
+                - img [ref=e329]
+              - link [ref=e332] [cursor=pointer]:
+                - /url: "?pf_start_flow=fl_38ePLpgffrsuCrpGG89hco"
+                - img [ref=e334]
+            - generic [ref=e336] [cursor=pointer]:
+              - generic:
+                - img
+            - generic [ref=e337] [cursor=pointer]:
+              - generic:
+                - img
+          - generic [ref=e341]:
+            - generic [ref=e342]:
+              - generic [ref=e343]: Top Picks for Salt, Herbs & Spices
+              - link "Discover More" [ref=e344] [cursor=pointer]:
+                - /url: shopping/items?Filters=(InventoryTag:254401:Top_Picks_for_Salt_Herbs_%26_Spices,ProductClass:GROCAASALTHA:Salt_Herbs_%26_Spices)
+            - generic [ref=e345]:
+              - link "Knorr Aromat - Canisters Original 200g Sign in for price per Carton (8 x 5 x 200g)" [ref=e347] [cursor=pointer]:
+                - /url: /shopping/items/UNIAKNORAROM0003
+                - img [ref=e349]
+                - generic [ref=e350]:
+                  - generic [ref=e351]: Knorr Aromat - Canisters Original 200g
+                  - generic [ref=e352]:
+                    - generic [ref=e353]: Sign in for price
+                    - generic [ref=e354]: per Carton (8 x 5 x 200g)
+              - link "Knorr Aromat - Canisters Original 75g Sign in for price per Carton (6 x 10 x 75g)" [ref=e356] [cursor=pointer]:
+                - /url: /shopping/items/UNIAKNORAROM0004
+                - img [ref=e358]
+                - generic [ref=e359]:
+                  - generic [ref=e360]: Knorr Aromat - Canisters Original 75g
+                  - generic [ref=e361]:
+                    - generic [ref=e362]: Sign in for price
+                    - generic [ref=e363]: per Carton (6 x 10 x 75g)
+              - link "Robertsons Spice Bottles - Blends - Steak & Chops 86g/100ml Sign in for price per Carton (2 x 10 x 86g/100ml)" [ref=e365] [cursor=pointer]:
+                - /url: /shopping/items/UNIAROBESPIC0015
+                - img [ref=e367]
+                - generic [ref=e368]:
+                  - generic [ref=e369]: Robertsons Spice Bottles - Blends - Steak & Chops 86g/100ml
+                  - generic [ref=e370]:
+                    - generic [ref=e371]: Sign in for price
+                    - generic [ref=e372]: per Carton (2 x 10 x 86g/100ml)
+              - link "Robertsons Spice Bottles - Salt & Vinegar 103g/100ml Sign in for price per Carton (2 x 10 x 103g/100ml)" [ref=e374] [cursor=pointer]:
+                - /url: /shopping/items/UNIAROBESPIC0024
+                - img [ref=e376]
+                - generic [ref=e377]:
+                  - generic [ref=e378]: Robertsons Spice Bottles - Salt & Vinegar 103g/100ml
+                  - generic [ref=e379]:
+                    - generic [ref=e380]: Sign in for price
+                    - generic [ref=e381]: per Carton (2 x 10 x 103g/100ml)
+              - link "Ina Paarman's Seasonings - Braai & Grill 200ml Sign in for price per Carton (12 x 200ml)" [ref=e383] [cursor=pointer]:
+                - /url: /shopping/items/INAAINAPSEAS0002
+                - img [ref=e385]
+                - generic [ref=e386]:
+                  - generic [ref=e387]: Ina Paarman's Seasonings - Braai & Grill 200ml
+                  - generic [ref=e388]:
+                    - generic [ref=e389]: Sign in for price
+                    - generic [ref=e390]: per Carton (12 x 200ml)
+              - link "Crown National Seasoning - Bbq King 1kg Sign in for price per Carton (10 x 1kg)" [ref=e392] [cursor=pointer]:
+                - /url: /shopping/items/CROACROWSEAS0010
+                - img [ref=e394]
+                - generic [ref=e395]:
+                  - generic [ref=e396]: Crown National Seasoning - Bbq King 1kg
+                  - generic [ref=e397]:
+                    - generic [ref=e398]: Sign in for price
+                    - generic [ref=e399]: per Carton (10 x 1kg)
+              - link "Marina 5 Star Range - Fine Iodated Salt 1kg Sign in for price per Carton (20 x 1kg)" [ref=e401] [cursor=pointer]:
+                - /url: /shopping/items/MAREMARI5STA0004
+                - img [ref=e403]
+                - generic [ref=e404]:
+                  - generic [ref=e405]: Marina 5 Star Range - Fine Iodated Salt 1kg
+                  - generic [ref=e406]:
+                    - generic [ref=e407]: Sign in for price
+                    - generic [ref=e408]: per Carton (20 x 1kg)
+              - link "Marina 5 Star Range - Coarse Iodated Salt 1kg Sign in for price per Carton (20 x 1kg)" [ref=e410] [cursor=pointer]:
+                - /url: /shopping/items/MAREMARI5STA0001
+                - img [ref=e412]
+                - generic [ref=e413]:
+                  - generic [ref=e414]: Marina 5 Star Range - Coarse Iodated Salt 1kg
+                  - generic [ref=e415]:
+                    - generic [ref=e416]: Sign in for price
+                    - generic [ref=e417]: per Carton (20 x 1kg)
+              - link "Marina 5 Star Range - Fine Iodated Salt 500g Sign in for price per Carton (40 x 500g)" [ref=e419] [cursor=pointer]:
+                - /url: /shopping/items/MAREMARI5STA0006
+                - img [ref=e421]
+                - generic [ref=e422]:
+                  - generic [ref=e423]: Marina 5 Star Range - Fine Iodated Salt 500g
+                  - generic [ref=e424]:
+                    - generic [ref=e425]: Sign in for price
+                    - generic [ref=e426]: per Carton (40 x 500g)
+              - link "Marina 5 Star Range - Coarse Iodated Salt 500g Sign in for price per Carton (40 x 500g)" [ref=e428] [cursor=pointer]:
+                - /url: /shopping/items/MAREMARI5STA0002
+                - img [ref=e430]
+                - generic [ref=e431]:
+                  - generic [ref=e432]: Marina 5 Star Range - Coarse Iodated Salt 500g
+                  - generic [ref=e433]:
+                    - generic [ref=e434]: Sign in for price
+                    - generic [ref=e435]: per Carton (40 x 500g)
+            - generic [ref=e436] [cursor=pointer]:
+              - generic:
+                - img
+            - generic [ref=e437] [cursor=pointer]:
+              - generic:
+                - img
+          - generic [ref=e439]:
+            - generic [ref=e441]:
+              - generic [ref=e442]:
+                - generic [ref=e443]: Biscuits Favourites
+                - link "Discover More" [ref=e444] [cursor=pointer]:
+                  - /url: shopping/items?Filters=(InventoryTag:254389:Biscuits_Favourites,ProductClass:GROCAABISCUA:Biscuits)
+              - generic [ref=e446]:
+                - link "Bakers Topper - Choc Mint 125g Sign in for price per Carton (12 x 125g)" [ref=e448] [cursor=pointer]:
+                  - /url: /shopping/items/NATABAKETOPP0001
+                  - img "Bakers Topper - Choc Mint 125g" [ref=e450]
+                  - generic [ref=e452]:
+                    - generic [ref=e453]: Sign in for price
+                    - generic [ref=e454]: per Carton (12 x 125g)
+                - link "Bakers Blue Label - Marie 200g Sign in for price per Carton (12 x 200g)" [ref=e456] [cursor=pointer]:
+                  - /url: /shopping/items/NATABAKEBLUE0003
+                  - img "Bakers Blue Label - Marie 200g" [ref=e458]
+                  - generic [ref=e460]:
+                    - generic [ref=e461]: Sign in for price
+                    - generic [ref=e462]: per Carton (12 x 200g)
+                - link "Bakers Cream Crackers - Crisp Crackers 200g Sign in for price per Carton (12 x 200g)" [ref=e464] [cursor=pointer]:
+                  - /url: /shopping/items/NATABAKECREA0002
+                  - img "Bakers Cream Crackers - Crisp Crackers 200g" [ref=e466]
+                  - generic [ref=e468]:
+                    - generic [ref=e469]: Sign in for price
+                    - generic [ref=e470]: per Carton (12 x 200g)
+                - link "Tobigo Petit Beurre 62g Sign in for price per Carton (30 x 62g)" [ref=e472] [cursor=pointer]:
+                  - /url: /shopping/items/BBCHTOBIPETI0001
+                  - img "Tobigo Petit Beurre 62g" [ref=e474]
+                  - generic [ref=e476]:
+                    - generic [ref=e477]: Sign in for price
+                    - generic [ref=e478]: per Carton (30 x 62g)
+            - generic [ref=e480]:
+              - generic [ref=e481]:
+                - generic [ref=e482]: Long Life Milk Best Sellers
+                - link "Shop More" [ref=e483] [cursor=pointer]:
+                  - /url: shopping/items?Filters=(InventoryTag:254416:Long_Life_Milk_Best_Sellers,ProductClass:GROCAALONGLALONGLA:Long_Life_Milk)
+              - link "Rond Bleu UHT Milk - Semi-Skimmed 1.5% (Tetra Tray) 1l Sign in for price per Carton (6 x 1l)" [ref=e486] [cursor=pointer]:
+                - /url: /shopping/items/LACBLAITUHTM0002
+                - img [ref=e488]
+                - generic [ref=e489]:
+                  - generic [ref=e490]: Rond Bleu UHT Milk - Semi-Skimmed 1.5% (Tetra Tray) 1l
+                  - generic [ref=e491]:
+                    - generic [ref=e492]: Sign in for price
+                    - generic [ref=e493]: per Carton (6 x 1l)
+            - generic [ref=e495]:
+              - generic [ref=e496]:
+                - generic [ref=e497]: The Best of Fruit Juices
+                - link "Shop More" [ref=e498] [cursor=pointer]:
+                  - /url: shopping/items?Filters=(InventoryTag:254380:The_Best_of_Fruit_Juices,ProductClass:GROCCACOLDBAFRUITA:Fruit_Juices)
+              - generic [ref=e500]:
+                - link "Ceres Tetra - 100% Fruit Juice - Apple 1l Sign in for price per Carton (12 x 1l)" [ref=e502] [cursor=pointer]:
+                  - /url: /shopping/items/PIOACEREAPPL0007
+                  - img "Ceres Tetra - 100% Fruit Juice - Apple 1l" [ref=e504]
+                  - generic [ref=e506]:
+                    - generic [ref=e507]: Sign in for price
+                    - generic [ref=e508]: per Carton (12 x 1l)
+                - link "Ceres Tetra - 100% Fruit Juice - Whispers of Summer 1l Sign in for price per Carton (12 x 1l)" [ref=e510] [cursor=pointer]:
+                  - /url: /shopping/items/PIOACEREWHIS0001
+                  - img "Ceres Tetra - 100% Fruit Juice - Whispers of Summer 1l" [ref=e512]
+                  - generic [ref=e514]:
+                    - generic [ref=e515]: Sign in for price
+                    - generic [ref=e516]: per Carton (12 x 1l)
+                - link "Ceres Tetra - 100% Fruit Juice - Apple 200ml Sign in for price per Carton (4 x 6 x 200ml)" [ref=e518] [cursor=pointer]:
+                  - /url: /shopping/items/PIOACEREAPPL0008
+                  - img "Ceres Tetra - 100% Fruit Juice - Apple 200ml" [ref=e520]
+                  - generic [ref=e522]:
+                    - generic [ref=e523]: Sign in for price
+                    - generic [ref=e524]: per Carton (4 x 6 x 200ml)
+                - link "Ceres Tetra - 100% Fruit Juice - Medley of Fruits 500ml Sign in for price per Carton (10 x 500ml)" [ref=e526] [cursor=pointer]:
+                  - /url: /shopping/items/PIOACERETETR0058
+                  - img "Ceres Tetra - 100% Fruit Juice - Medley of Fruits 500ml" [ref=e528]
+                  - generic [ref=e530]:
+                    - generic [ref=e531]: Sign in for price
+                    - generic [ref=e532]: per Carton (10 x 500ml)
+          - generic [ref=e536]:
+            - generic [ref=e537]:
+              - generic [ref=e538]: Top-Rated Rusks Picks
+              - link "Show More" [ref=e539] [cursor=pointer]:
+                - /url: shopping/items?Filters=(InventoryTag:254394:Top-Rated_Rusks_Picks,ProductClass:GROCAABISCUARUSKSA:Rusks)
+            - generic [ref=e540]:
+              - link "Bakers Ginger Nuts Rusks - Ginger&Golden Syrup Flav. 450g Sign in for price per Carton (12 x 450g)" [ref=e542] [cursor=pointer]:
+                - /url: /shopping/items/NATABAKETEST0003
+                - img [ref=e544]
+                - generic [ref=e545]:
+                  - generic [ref=e546]: Bakers Ginger Nuts Rusks - Ginger&Golden Syrup Flav. 450g
+                  - generic [ref=e547]:
+                    - generic [ref=e548]: Sign in for price
+                    - generic [ref=e549]: per Carton (12 x 450g)
+              - link "Bakers Romany Rusks - Classic Choc Coconut Flavour 450g Sign in for price per Carton (12 x 450g)" [ref=e551] [cursor=pointer]:
+                - /url: /shopping/items/NATABAKEROMA0018
+                - img [ref=e553]
+                - generic [ref=e554]:
+                  - generic [ref=e555]: Bakers Romany Rusks - Classic Choc Coconut Flavour 450g
+                  - generic [ref=e556]:
+                    - generic [ref=e557]: Sign in for price
+                    - generic [ref=e558]: per Carton (12 x 450g)
+              - link "Bakers Tennis Rusks - Classic Coconut 450g Sign in for price per Carton (12 x 450g)" [ref=e560] [cursor=pointer]:
+                - /url: /shopping/items/NATABAKETENN0010
+                - img [ref=e562]
+                - generic [ref=e563]:
+                  - generic [ref=e564]: Bakers Tennis Rusks - Classic Coconut 450g
+                  - generic [ref=e565]:
+                    - generic [ref=e566]: Sign in for price
+                    - generic [ref=e567]: per Carton (12 x 450g)
+              - link "Bakers Blue Label Rusks - Marie Biscuits Flavour 450g Sign in for price per Carton (12 x 450g)" [ref=e569] [cursor=pointer]:
+                - /url: /shopping/items/NATABAKEBLUE0009
+                - img [ref=e571]
+                - generic [ref=e572]:
+                  - generic [ref=e573]: Bakers Blue Label Rusks - Marie Biscuits Flavour 450g
+                  - generic [ref=e574]:
+                    - generic [ref=e575]: Sign in for price
+                    - generic [ref=e576]: per Carton (12 x 450g)
+              - link "Bakers Nuttikrust - Rusk 450g Sign in for price per Carton (12 x 450g)" [ref=e578] [cursor=pointer]:
+                - /url: /shopping/items/NATABAKENUTT0004
+                - img [ref=e580]
+                - generic [ref=e581]:
+                  - generic [ref=e582]: Bakers Nuttikrust - Rusk 450g
+                  - generic [ref=e583]:
+                    - generic [ref=e584]: Sign in for price
+                    - generic [ref=e585]: per Carton (12 x 450g)
+              - link "Ouma Rusks - Buttermilk (Chunky) 1kg Sign in for price per Carton (12 x 1kg)" [ref=e587] [cursor=pointer]:
+                - /url: /shopping/items/RCLAOUMARUSK0003
+                - img [ref=e589]
+                - generic [ref=e590]:
+                  - generic [ref=e591]: Ouma Rusks - Buttermilk (Chunky) 1kg
+                  - generic [ref=e592]:
+                    - generic [ref=e593]: Sign in for price
+                    - generic [ref=e594]: per Carton (12 x 1kg)
+              - link "Ouma Rusks - Muesli (Sliced) 450g Sign in for price per Carton (12 x 450g)" [ref=e596] [cursor=pointer]:
+                - /url: /shopping/items/RCLAOUMARUSK0011
+                - img [ref=e598]
+                - generic [ref=e599]:
+                  - generic [ref=e600]: Ouma Rusks - Muesli (Sliced) 450g
+                  - generic [ref=e601]:
+                    - generic [ref=e602]: Sign in for price
+                    - generic [ref=e603]: per Carton (12 x 450g)
+              - link "Ouma Rusks - Three Seed (Sliced) 450g Sign in for price per Carton (12 x 450g)" [ref=e605] [cursor=pointer]:
+                - /url: /shopping/items/RCLAOUMARUSK0015
+                - img [ref=e607]
+                - generic [ref=e608]:
+                  - generic [ref=e609]: Ouma Rusks - Three Seed (Sliced) 450g
+                  - generic [ref=e610]:
+                    - generic [ref=e611]: Sign in for price
+                    - generic [ref=e612]: per Carton (12 x 450g)
+              - link "Ouma Rusks - Buttermilk (Sliced) 450g Sign in for price per Carton (12 x 450g)" [ref=e614] [cursor=pointer]:
+                - /url: /shopping/items/RCLAOUMARUSK0005
+                - img [ref=e616]
+                - generic [ref=e617]:
+                  - generic [ref=e618]: Ouma Rusks - Buttermilk (Sliced) 450g
+                  - generic [ref=e619]:
+                    - generic [ref=e620]: Sign in for price
+                    - generic [ref=e621]: per Carton (12 x 450g)
+              - link "Ouma Rusks - Muesli (Chunky) 500g Sign in for price per Carton (12 x 500g)" [ref=e623] [cursor=pointer]:
+                - /url: /shopping/items/RCLAOUMARUSK0010
+                - img [ref=e625]
+                - generic [ref=e626]:
+                  - generic [ref=e627]: Ouma Rusks - Muesli (Chunky) 500g
+                  - generic [ref=e628]:
+                    - generic [ref=e629]: Sign in for price
+                    - generic [ref=e630]: per Carton (12 x 500g)
+              - link "Ouma Rusks - Condensed Milk (Chunky) 500g Sign in for price per Carton (12 x 500g)" [ref=e632] [cursor=pointer]:
+                - /url: /shopping/items/RCLAOUMARUSK0006
+                - img [ref=e634]
+                - generic [ref=e635]:
+                  - generic [ref=e636]: Ouma Rusks - Condensed Milk (Chunky) 500g
+                  - generic [ref=e637]:
+                    - generic [ref=e638]: Sign in for price
+                    - generic [ref=e639]: per Carton (12 x 500g)
+              - link "Ouma Rusks - Buttermilk Mini Bites 200g Sign in for price per Carton (12 x 200g)" [ref=e641] [cursor=pointer]:
+                - /url: /shopping/items/RCLAOUMARUSK0019
+                - img [ref=e643]
+                - generic [ref=e644]:
+                  - generic [ref=e645]: Ouma Rusks - Buttermilk Mini Bites 200g
+                  - generic [ref=e646]:
+                    - generic [ref=e647]: Sign in for price
+                    - generic [ref=e648]: per Carton (12 x 200g)
+              - link "Ouma Rusks - Buttermilk (Chunky) 500g Sign in for price per Carton (12 x 500g)" [ref=e650] [cursor=pointer]:
+                - /url: /shopping/items/RCLAOUMARUSK0004
+                - img [ref=e652]
+                - generic [ref=e653]:
+                  - generic [ref=e654]: Ouma Rusks - Buttermilk (Chunky) 500g
+                  - generic [ref=e655]:
+                    - generic [ref=e656]: Sign in for price
+                    - generic [ref=e657]: per Carton (12 x 500g)
+              - link "Alettes Rusks Rusks - Buttermilk 500g Sign in for price per Carton (12 x 500g)" [ref=e659] [cursor=pointer]:
+                - /url: /shopping/items/ALEBALETRUSK0004
+                - img [ref=e661]
+                - generic [ref=e662]:
+                  - generic [ref=e663]: Alettes Rusks Rusks - Buttermilk 500g
+                  - generic [ref=e664]:
+                    - generic [ref=e665]: Sign in for price
+                    - generic [ref=e666]: per Carton (12 x 500g)
+            - generic [ref=e667] [cursor=pointer]:
+              - generic:
+                - img
+            - generic [ref=e668] [cursor=pointer]:
+              - generic:
+                - img
+          - generic [ref=e672]:
+            - generic [ref=e673]:
+              - generic [ref=e674]: Best of the Best in Condiments & Dressings
+              - link "See More" [ref=e675] [cursor=pointer]:
+                - /url: shopping/items?Filters=(InventoryTag:254399:Best_of_the_Best_in_Condiments_%26_Dressings,ProductClass:GROCAACONDIA:Condiments_%26_Dressings)
+            - generic [ref=e676]:
+              - link "All Gold Tomato Sauce - Original (Glass) 700ml Sign in for price per Carton (6 x 700ml)" [ref=e678] [cursor=pointer]:
+                - /url: /shopping/items/TIGAALLGSAUC0012
+                - img [ref=e680]
+                - generic [ref=e681]:
+                  - generic [ref=e682]: All Gold Tomato Sauce - Original (Glass) 700ml
+                  - generic [ref=e683]:
+                    - generic [ref=e684]: Sign in for price
+                    - generic [ref=e685]: per Carton (6 x 700ml)
+              - link "All Gold Tomato Sauce - Original - (Glass) 350ml Sign in for price per Carton (6 x 350ml)" [ref=e687] [cursor=pointer]:
+                - /url: /shopping/items/TIGAALLGSAUC0011
+                - img [ref=e689]
+                - generic [ref=e690]:
+                  - generic [ref=e691]: All Gold Tomato Sauce - Original - (Glass) 350ml
+                  - generic [ref=e692]:
+                    - generic [ref=e693]: Sign in for price
+                    - generic [ref=e694]: per Carton (6 x 350ml)
+              - link "All Gold Tomato Sauce - Original (Squeeze) 500ml Sign in for price per Carton (12 x 500ml)" [ref=e696] [cursor=pointer]:
+                - /url: /shopping/items/TIGAALLGTOMA0030
+                - img [ref=e698]
+                - generic [ref=e699]:
+                  - generic [ref=e700]: All Gold Tomato Sauce - Original (Squeeze) 500ml
+                  - generic [ref=e701]:
+                    - generic [ref=e702]: Sign in for price
+                    - generic [ref=e703]: per Carton (12 x 500ml)
+              - link "Mrs Balls Chutney - Hot (Pet) 1.1kg Sign in for price per Carton (12 x 1.1kg)" [ref=e705] [cursor=pointer]:
+                - /url: /shopping/items/TIGAMRSBCHUT0008
+                - img [ref=e707]
+                - generic [ref=e708]:
+                  - generic [ref=e709]: Mrs Balls Chutney - Hot (Pet) 1.1kg
+                  - generic [ref=e710]:
+                    - generic [ref=e711]: Sign in for price
+                    - generic [ref=e712]: per Carton (12 x 1.1kg)
+              - link "Mrs Balls Chutney - Jalapeno (Glass) 470g Sign in for price per Carton (8 x 470g)" [ref=e714] [cursor=pointer]:
+                - /url: /shopping/items/TIGAMRSBCHUT0009
+                - img [ref=e716]
+                - generic [ref=e717]:
+                  - generic [ref=e718]: Mrs Balls Chutney - Jalapeno (Glass) 470g
+                  - generic [ref=e719]:
+                    - generic [ref=e720]: Sign in for price
+                    - generic [ref=e721]: per Carton (8 x 470g)
+              - link "Mrs Balls Chutney - Original (Pet) 1.1kg Sign in for price per Carton (12 x 1.1kg)" [ref=e723] [cursor=pointer]:
+                - /url: /shopping/items/TIGAMRSBCHUT0014
+                - img [ref=e725]
+                - generic [ref=e726]:
+                  - generic [ref=e727]: Mrs Balls Chutney - Original (Pet) 1.1kg
+                  - generic [ref=e728]:
+                    - generic [ref=e729]: Sign in for price
+                    - generic [ref=e730]: per Carton (12 x 1.1kg)
+              - link "Mrs Balls Chutney - Peach (Glass) 470g Sign in for price per Carton (3 x 8 x 470g)" [ref=e732] [cursor=pointer]:
+                - /url: /shopping/items/TIGAMRSBCHUT0018
+                - img [ref=e734]
+                - generic [ref=e735]:
+                  - generic [ref=e736]: Mrs Balls Chutney - Peach (Glass) 470g
+                  - generic [ref=e737]:
+                    - generic [ref=e738]: Sign in for price
+                    - generic [ref=e739]: per Carton (3 x 8 x 470g)
+              - link "Mrs Balls Chutney - Hot (Glass) 470g Sign in for price per Carton (3 x 8 x 470g)" [ref=e741] [cursor=pointer]:
+                - /url: /shopping/items/TIGAMRSBCHUT0007
+                - img [ref=e743]
+                - generic [ref=e744]:
+                  - generic [ref=e745]: Mrs Balls Chutney - Hot (Glass) 470g
+                  - generic [ref=e746]:
+                    - generic [ref=e747]: Sign in for price
+                    - generic [ref=e748]: per Carton (3 x 8 x 470g)
+              - link "Mrs Balls Chutney - Original (Glass) 470g Sign in for price per Carton (3 x 8 x 470g)" [ref=e750] [cursor=pointer]:
+                - /url: /shopping/items/TIGAMRSBCHUT0013
+                - img [ref=e752]
+                - generic [ref=e753]:
+                  - generic [ref=e754]: Mrs Balls Chutney - Original (Glass) 470g
+                  - generic [ref=e755]:
+                    - generic [ref=e756]: Sign in for price
+                    - generic [ref=e757]: per Carton (3 x 8 x 470g)
+              - link "Crosse & Blackwell Mayonnaise - Tangy (Glass) 250g Sign in for price per Carton (4 x 6 x 250g)" [ref=e759] [cursor=pointer]:
+                - /url: /shopping/items/TIGACROSMAYO0011
+                - img [ref=e761]
+                - generic [ref=e762]:
+                  - generic [ref=e763]: Crosse & Blackwell Mayonnaise - Tangy (Glass) 250g
+                  - generic [ref=e764]:
+                    - generic [ref=e765]: Sign in for price
+                    - generic [ref=e766]: per Carton (4 x 6 x 250g)
+              - link "Crosse & Blackwell Mayonnaise - Regular Tangy (Glass) 750g Sign in for price per Carton (2 x 6 x 750g)" [ref=e768] [cursor=pointer]:
+                - /url: /shopping/items/TIGACROSMAYO0013
+                - img [ref=e770]
+                - generic [ref=e771]:
+                  - generic [ref=e772]: Crosse & Blackwell Mayonnaise - Regular Tangy (Glass) 750g
+                  - generic [ref=e773]:
+                    - generic [ref=e774]: Sign in for price
+                    - generic [ref=e775]: per Carton (2 x 6 x 750g)
+              - link "Koo Salad - Beetroot Grated & Spiced 405g Sign in for price per Carton (12 x 405g)" [ref=e777] [cursor=pointer]:
+                - /url: /shopping/items/TIGAKOOASALA0003
+                - img [ref=e779]
+                - generic [ref=e780]:
+                  - generic [ref=e781]: Koo Salad - Beetroot Grated & Spiced 405g
+                  - generic [ref=e782]:
+                    - generic [ref=e783]: Sign in for price
+                    - generic [ref=e784]: per Carton (12 x 405g)
+              - link "Koo Salad - Beetroot Sliced 780g Sign in for price per Carton (6 x 780g)" [ref=e786] [cursor=pointer]:
+                - /url: /shopping/items/TIGAKOOASALA0006
+                - img [ref=e788]
+                - generic [ref=e789]:
+                  - generic [ref=e790]: Koo Salad - Beetroot Sliced 780g
+                  - generic [ref=e791]:
+                    - generic [ref=e792]: Sign in for price
+                    - generic [ref=e793]: per Carton (6 x 780g)
+              - link "Nola Mayonnaise - Original 750g Sign in for price per Carton (2 x 6 x 750g)" [ref=e795] [cursor=pointer]:
+                - /url: /shopping/items/RCLANOLAMAYO0008
+                - img [ref=e797]
+                - generic [ref=e798]:
+                  - generic [ref=e799]: Nola Mayonnaise - Original 750g
+                  - generic [ref=e800]:
+                    - generic [ref=e801]: Sign in for price
+                    - generic [ref=e802]: per Carton (2 x 6 x 750g)
+              - link "Carara Pickled - Whole Cherry Peppers - Cored 4.7kg Sign in for price per Each (4.7kg)" [ref=e804] [cursor=pointer]:
+                - /url: /shopping/items/CARCCARAPICK0021
+                - img [ref=e806]
+                - generic [ref=e807]:
+                  - generic [ref=e808]: Carara Pickled - Whole Cherry Peppers - Cored 4.7kg
+                  - generic [ref=e809]:
+                    - generic [ref=e810]: Sign in for price
+                    - generic [ref=e811]: per Each (4.7kg)
+              - link "Spur Salad & French Fry Dressing - Squeeze Bottle 500ml Sign in for price per Carton (12 x 500ml)" [ref=e813] [cursor=pointer]:
+                - /url: /shopping/items/SPUASPURDRES0003
+                - img [ref=e815]
+                - generic [ref=e816]:
+                  - generic [ref=e817]: Spur Salad & French Fry Dressing - Squeeze Bottle 500ml
+                  - generic [ref=e818]:
+                    - generic [ref=e819]: Sign in for price
+                    - generic [ref=e820]: per Carton (12 x 500ml)
+              - link "Miami Atchar - Mango Atchar (Hot) 400g Sign in for price per Carton (12 x 400g)" [ref=e822] [cursor=pointer]:
+                - /url: /shopping/items/MIAAMIAMATCH0005
+                - img [ref=e824]
+                - generic [ref=e825]:
+                  - generic [ref=e826]: Miami Atchar - Mango Atchar (Hot) 400g
+                  - generic [ref=e827]:
+                    - generic [ref=e828]: Sign in for price
+                    - generic [ref=e829]: per Carton (12 x 400g)
+              - link "Jimmy's Sauces - Steakhouse Sauce 750ml Sign in for price per Carton (12 x 750ml)" [ref=e831] [cursor=pointer]:
+                - /url: /shopping/items/JIMAJIMMSAUC0006
+                - img [ref=e833]
+                - generic [ref=e834]:
+                  - generic [ref=e835]: Jimmy's Sauces - Steakhouse Sauce 750ml
+                  - generic [ref=e836]:
+                    - generic [ref=e837]: Sign in for price
+                    - generic [ref=e838]: per Carton (12 x 750ml)
+              - link "Peppadew Piquante Peppers Range - Mild - Whole 400g Sign in for price per Carton (12 x 400g)" [ref=e840] [cursor=pointer]:
+                - /url: /shopping/items/PEPAPEPPPIQU0002
+                - img [ref=e842]
+                - generic [ref=e843]:
+                  - generic [ref=e844]: Peppadew Piquante Peppers Range - Mild - Whole 400g
+                  - generic [ref=e845]:
+                    - generic [ref=e846]: Sign in for price
+                    - generic [ref=e847]: per Carton (12 x 400g)
+              - link "Safari Vinegar - Brown Spirit (5% CT) 750ml Sign in for price per Carton (12 x 750ml)" [ref=e849] [cursor=pointer]:
+                - /url: /shopping/items/INSASAFAVINE0005
+                - img [ref=e851]
+                - generic [ref=e852]:
+                  - generic [ref=e853]: Safari Vinegar - Brown Spirit (5% CT) 750ml
+                  - generic [ref=e854]:
+                    - generic [ref=e855]: Sign in for price
+                    - generic [ref=e856]: per Carton (12 x 750ml)
+            - generic [ref=e857] [cursor=pointer]:
+              - generic:
+                - img
+            - generic [ref=e858] [cursor=pointer]:
+              - generic:
+                - img
+          - generic [ref=e860]:
+            - generic [ref=e862]:
+              - generic [ref=e863]:
+                - generic [ref=e864]: Customer Favourites in Osmans Taj Mahaal
+                - link "View More" [ref=e865] [cursor=pointer]:
+                  - /url: shopping/items?Filters=(InventoryTag:14526:Customer_Favourites_in_Osmans_Taj_Mahaal,Brand:792:Osmans_Taj_Mahaal)
+              - generic [ref=e867]:
+                - link "Osmans Taj Mahaal Masala - Garum Masala 100g Sign in for price per Carton (40 x 100g)" [ref=e869] [cursor=pointer]:
+                  - /url: /shopping/items/OSMAOSMAMASA0013
+                  - img "Osmans Taj Mahaal Masala - Garum Masala 100g" [ref=e871]
+                  - generic [ref=e873]:
+                    - generic [ref=e874]: Sign in for price
+                    - generic [ref=e875]: per Carton (40 x 100g)
+                - link "Osmans Taj Mahaal Masala - Breyani 400g Sign in for price per Carton (15 x 400g)" [ref=e877] [cursor=pointer]:
+                  - /url: /shopping/items/OSMAOSMAMASA0044
+                  - img "Osmans Taj Mahaal Masala - Breyani 400g" [ref=e879]
+                  - generic [ref=e881]:
+                    - generic [ref=e882]: Sign in for price
+                    - generic [ref=e883]: per Carton (15 x 400g)
+                - link "Osmans Taj Mahaal Biryani Mix Pack 550g Sign in for price per Carton (12 x 550g)" [ref=e885] [cursor=pointer]:
+                  - /url: /shopping/items/OSMAOSMABIRY0001
+                  - img "Osmans Taj Mahaal Biryani Mix Pack 550g" [ref=e887]
+                  - generic [ref=e889]:
+                    - generic [ref=e890]: Sign in for price
+                    - generic [ref=e891]: per Carton (12 x 550g)
+                - link "Osmans Taj Mahaal Masala - Durban Masala 200g Sign in for price per Carton (30 x 200g)" [ref=e893] [cursor=pointer]:
+                  - /url: /shopping/items/OSMAOSMAMASA0045
+                  - img "Osmans Taj Mahaal Masala - Durban Masala 200g" [ref=e895]
+                  - generic [ref=e897]:
+                    - generic [ref=e898]: Sign in for price
+                    - generic [ref=e899]: per Carton (30 x 200g)
+            - generic [ref=e901]:
+              - generic [ref=e902]:
+                - generic [ref=e903]: Best-Selling Chocolates Items
+                - link "See More" [ref=e904] [cursor=pointer]:
+                  - /url: shopping/items?Filters=(InventoryTag:254846:Best-Selling_Chocolates_Items,ProductClass:GROCBACHOCOA:Chocolates)
+              - generic [ref=e906]:
+                - link "Cadbury Chocolate Slabs - Dairy Milk - Cashew &Coconut 80g Sign in for price per Carton (24 x 80g)" [ref=e908] [cursor=pointer]:
+                  - /url: /shopping/items/MONACADBCHOC0031
+                  - img "Cadbury Chocolate Slabs - Dairy Milk - Cashew &Coconut 80g" [ref=e910]
+                  - generic [ref=e912]:
+                    - generic [ref=e913]: Sign in for price
+                    - generic [ref=e914]: per Carton (24 x 80g)
+                - link "Cadbury Chocolate Slabs - Dairy Milk - Rum And Raisin 80g Sign in for price per Carton (24 x 80g)" [ref=e916] [cursor=pointer]:
+                  - /url: /shopping/items/MONACADBCHOC0042
+                  - img "Cadbury Chocolate Slabs - Dairy Milk - Rum And Raisin 80g" [ref=e918]
+                  - generic [ref=e920]:
+                    - generic [ref=e921]: Sign in for price
+                    - generic [ref=e922]: per Carton (24 x 80g)
+                - link "Cadbury Chocolate Slabs - Dairy Milk - Top Deck w/Mint 80g Sign in for price per Carton (24 x 80g)" [ref=e924] [cursor=pointer]:
+                  - /url: /shopping/items/MONACADBCHOC0046
+                  - img "Cadbury Chocolate Slabs - Dairy Milk - Top Deck w/Mint 80g" [ref=e926]
+                  - generic [ref=e928]:
+                    - generic [ref=e929]: Sign in for price
+                    - generic [ref=e930]: per Carton (24 x 80g)
+                - link "Cadbury Chocolate Slabs - Dairy Milk - Fruit & Nut 80g Sign in for price per Carton (12 x 80g)" [ref=e932] [cursor=pointer]:
+                  - /url: /shopping/items/MONACADBCHOC0033
+                  - img "Cadbury Chocolate Slabs - Dairy Milk - Fruit & Nut 80g" [ref=e934]
+                  - generic [ref=e936]:
+                    - generic [ref=e937]: Sign in for price
+                    - generic [ref=e938]: per Carton (12 x 80g)
+            - generic [ref=e940]:
+              - generic [ref=e941]:
+                - generic [ref=e942]: Popular Items in Lait de France
+                - link "Show More" [ref=e943] [cursor=pointer]:
+                  - /url: shopping/items?Filters=(InventoryTag:14300:Popular_Items_in_Lait_de_France,Brand:1425:Lait_de_France)
+              - link "Lait de France Milk - UHT - Semi-Skimmed 1.5% (Tetra Tray )1l Sign in for price per Carton (6 x 1l)" [ref=e946] [cursor=pointer]:
+                - /url: /shopping/items/LACBLAITUHTM0001
+                - img [ref=e948]
+                - generic [ref=e949]:
+                  - generic [ref=e950]: Lait de France Milk - UHT - Semi-Skimmed 1.5% (Tetra Tray )1l
+                  - generic [ref=e951]:
+                    - generic [ref=e952]: Sign in for price
+                    - generic [ref=e953]: per Carton (6 x 1l)
+        - button [ref=e954] [cursor=pointer]:
+          - img [ref=e956]
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img
+                        - generic:
+                          - generic: Hi, Sign In
+                          - generic: Create an account
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img
+                        - generic: Home
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img
+                        - generic: Sign In
+    - generic [ref=e960]:
+      - generic [ref=e961]:
+        - generic [ref=e962]: Create Account
+        - button [ref=e963] [cursor=pointer]:
+          - generic:
+            - img
+      - generic [ref=e966]:
+        - img [ref=e967]
+        - generic [ref=e969]:
+          - generic [ref=e970]:
+            - generic [ref=e971]:
+              - generic [ref=e972]: Registered Company Name *
+              - textbox "Registered Company Name *" [ref=e973]
+            - generic [ref=e974]:
+              - generic [ref=e975]: Trading As
+              - textbox "Trading As" [ref=e976]
+          - generic [ref=e977]:
+            - generic [ref=e978]:
+              - generic [ref=e979]: Full Name *
+              - textbox "Full Name *" [ref=e980]: Test Customer
+            - generic [ref=e981]:
+              - generic [ref=e982]: Email *
+              - textbox "Email *" [active] [ref=e983]: testcustomer@email.co.za
+          - generic [ref=e984]:
+            - generic [ref=e985]: Phone *
+            - generic [ref=e986]:
+              - generic [ref=e987]:
+                - button "Code" [ref=e989] [cursor=pointer]
+                - text: ×
+              - textbox [ref=e990]
+          - generic [ref=e991]:
+            - generic [ref=e992]: Destination Country *
+            - generic [ref=e993]:
+              - button "Select an option" [ref=e995] [cursor=pointer]
+              - text: ×
+          - generic [ref=e996]:
+            - generic [ref=e997]: Destination Port *
+            - generic [ref=e998]:
+              - button "Select an option" [ref=e1000] [cursor=pointer]
+              - text: ×
+          - generic [ref=e1001]:
+            - generic [ref=e1002]: Invoicing Currency *
+            - generic [ref=e1003]:
+              - button "Select an option" [ref=e1005] [cursor=pointer]
+              - text: ×
+          - generic [ref=e1006]:
+            - generic [ref=e1007]: Which product categories are you interested in? *
+            - generic [ref=e1008]:
+              - button "Select an option" [ref=e1010] [cursor=pointer]
+              - text: ×
+          - generic [ref=e1011]:
+            - generic [ref=e1012]: Comments
+            - textbox "Comments" [ref=e1013]
+          - iframe [ref=e1018]:
+            - generic [ref=f1e2]:
+              - generic [ref=f1e3]:
+                - checkbox "I'm not a robot" [ref=f1e7]
+                - generic [ref=f1e11]: I'm not a robot
+              - generic [ref=f1e15]: reCAPTCHA
+          - button "Sign up" [ref=e1019] [cursor=pointer]
+        - generic [ref=e1020]: Already have an account? Sign in
+```
+
+# Test source
+
+```ts
+  1  | import { chromium } from '@playwright/test';
+  2  | import { createBdd } from "playwright-bdd";
+  3  | import { test} from "playwright-bdd";
+  4  | import { LoginPage } from '../pages/LoginPage';
+  5  | import { customers } from '../support/config/customers';
+  6  | import { urls } from '../support/config/urls';
+  7  | 
+  8  | const { Given, When, Then } = createBdd(test);
+  9  | 
+  10 | //Create a new customer account
+  11 | Given("Customer is on the gateway login page to create a new account", async ({page}) =>
+  12 | {
+  13 |     const loginPage = new LoginPage(page);
+  14 |     await loginPage.goto(urls.dev);
+  15 | })
+  16 | 
+  17 | When('Customer clicks Create account', async ({page}) => {
+  18 |     await page.getByText('Create account', { exact: true }).click();
+  19 | });
+  20 | 
+  21 | When('Customer enters their name', async ({page}) => {
+  22 |     await page.getByRole('textbox', { name: 'Full name' }).click();
+  23 |     await page.getByRole('textbox', { name: 'Full name' }).fill(customers.testCustomer.name);
+  24 | });
+  25 | 
+  26 | When('Customer enters their email', async ({page}) => {
+  27 |     await page.getByRole('textbox', { name: 'Email' }).click();
+  28 |     await page.getByRole('textbox', { name: 'Email' }).fill(customers.testCustomer.email);
+  29 | });
+  30 | 
+  31 | When('Customer enters their country', async ({page}) => {
+> 32 |     await page.getByRole('combobox').selectOption('AF');
+     |                                      ^ TimeoutError: locator.selectOption: Timeout 30000ms exceeded.
+  33 | });
+  34 | 
+  35 | When('Customer enters their phone number', async ({page}) => {
+  36 |     await page.getByRole('textbox', { name: 'Phone' }).click();
+  37 |     await page.getByRole('textbox', { name: 'Phone' }).fill(customers.testCustomer.phoneNumber);
+  38 | });
+  39 | 
+  40 | When('Customer enters a comment', async ({page}) => {
+  41 |     await page.getByRole('textbox', { name: 'Comments' }).click();
+  42 |     await page.getByRole('textbox', { name: 'Comments' }).fill(customers.testCustomer.phoneNumber);
+  43 | });
+  44 | 
+  45 | When('Customer clicks captcha', async ({page}) => {
+  46 |     await page.locator('iframe[name="a-6aksgnyri91x"]').contentFrame().getByRole('checkbox', { name: 'I\'m not a robot' }).click();
+  47 | });
+  48 | 
+  49 | When('Customer clicks continue button', async ({page}) => {
+  50 |     await page.getByRole('button', { name: 'Continue' }).click();
+  51 | });
+  52 | 
+  53 | Then('A customer clicks button Done', async ({page}) => {
+  54 |     await page.getByText('An email with reset').click();
+  55 | });
+  56 | 
+```
